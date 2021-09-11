@@ -1,0 +1,52 @@
+{% extends 'home.html' %}
+{% block myContent %}
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4"></div>
+        <div class="col col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+          <form action="http://127.0.0.1:8000/employee/addpage" method="post">
+            <table class="table table-borderless">
+                <tr>
+                    <td>EMPLOYEE CODE</td>
+                    <td><input name="employee_code" type="number" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td>NAME</td>
+                    <td><input  name="name" type="text" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td>ADDRESS</td>
+                    <td><input  name="address" type="text" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td>MOBILE NO</td>
+                    <td><input  name="mobile_no" type="number" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td>PINCODE</td>
+                    <td><input  name="pincode" type="number" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td>SALARY</td>
+                    <td><input  name="salary" type="number" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td>USERNAME</td>
+                    <td><input  name="username" type="text" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td>PASSWORD</td>
+                    <td><input  name="password" type="password" class="form-control"></td>
+                </tr>
+                
+                    <td></td>
+                    <td><center><button type="submit" class="btn btn-secondary">SIGN UP</button></center></td>
+                </tr>
+            </table>
+          </form>
+        </div>
+        <div class="col col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4"></div>
+    </div>
+</div>    
+{% endblock %}
+    
